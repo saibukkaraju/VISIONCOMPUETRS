@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .box {
+    width: 45%;
+    padding: 20px;
+    border: 2px solid #ffa500;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .form-box input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .form-box button {
+    padding: 10px 20px;
+    background-color: #ffa500;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .display-box p {
+    font-size: 16px;
+    margin: 8px 0;
+  }
+  

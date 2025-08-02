@@ -1,0 +1,75 @@
+/* Accessible top scroll bar */
+/* Accessible top scroll bar */
+.top-scroll-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 32px;
+  background-color: #ff6600;
+  color: white;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  z-index: 1100;
+  padding-left: 10px;
+}
+
+/* Animated scrolling text */
+.scroll-text {
+  display: inline-block;
+  white-space: nowrap;
+  padding-left: 100%;
+  animation: scroll-left 20s linear infinite;
+  font-size: 20px;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Main header bar */
+.main-header {
+  position: fixed;
+  top: 28px; /* Positioned below the scroll bar */
+  width: 100%;
+  height: 93px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+/* Logo styling */
+.logo-section .logo-img {
+  height: 80px;
+  width: 140px;
+  padding-left: 20px;
+}
+
+/* Navigation links */
+.nav-section {
+  display: flex;
+  gap: 30px;
+  padding-right: 0;
+}
+
+.nav-section a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #007bff;
+  transition: color 0.3s;
+  padding-left: 30px;
+}
+
+.nav-section a:hover {
+  color: orangered;
+}

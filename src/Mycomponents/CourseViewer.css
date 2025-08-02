@@ -1,0 +1,70 @@
+.total-container {
+  display: flex;
+  width: 1100px;
+  height: 500px;
+  border: 2px solid #333;
+  margin: 40px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.left-panel {
+  width: 30%;
+  height: 100%;
+  overflow-y: hidden;
+  background-color: #fff3e0;
+  padding: 10px;
+  border-right: 1px solid #ccc;
+}
+
+.right-panel {
+  width: 65%;
+  height: 100%;
+  padding: 20px;
+  background-color: white;
+  overflow-y: scroll; /* Ensure scroll appears when content exceeds the height */
+  box-sizing: border-box; /* Ensures padding is inside the width/height calculation */
+}
+.course-box {
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 10px;
+  margin-left: 40px;
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.3s ease;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+}
+
+.course-box:hover {
+  transform: scale(1.03);
+}
+
+.course-icon {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-top: 10px;
+}
+
+.course-name {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.detail-img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin: 10px 0;
+}
+
+ul {
+  padding-left: 20px;
+  font-size: 15px;
+}
+
+li {
+  margin-bottom: 8px;
+}

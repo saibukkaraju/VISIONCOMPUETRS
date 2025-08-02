@@ -1,0 +1,54 @@
+.top-section {
+    background-color: #005f99;
+    color: white;
+    padding: 80px 20px 40px;
+    position: relative;
+  }
+  
+  .wave {
+    position: absolute;
+    top: -60px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+  }
+  
+  .wave svg {
+    width: 100%;
+    height: 60px;
+  }
+  
+  .wave path {
+    fill: #005f99;
+  }
+  
+  .top-section-content {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .column {
+    flex: 1 1 200px;
+    min-width: 200px;
+  }
+  
+  .column h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .column ul li {
+    font-size: 0.95rem;
+    margin-bottom: 6px;
+  }
