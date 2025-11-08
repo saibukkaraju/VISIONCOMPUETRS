@@ -1,9 +1,9 @@
 import React from 'react';
 import './Contact.css';
-import blurr from './images/blurr.jpeg';
+//import blurr from './images/blurr.jpeg';
 import './TrainingApproach.js';
 import TrainingApproach from './TrainingApproach.js';
-import Registration from './Registration.js';
+//import Registration from './Registration.js';
 import Footer from './Footer.js';
 import location from './images/location.png';
 import call from './images/call.png';
@@ -17,7 +17,7 @@ function Contact() {
           <div className="about-container">
           
                 {/* Heading Bar */}
-                <div className="about-heading" style={{ backgroundImage: `url(${blurr})` }}>
+                <div className="about-heading" >
                   <div className="overlay">
                     <h1>CONTACT US</h1>
                    
@@ -50,9 +50,7 @@ function Contact() {
               
               }
             </div>
-            <div className='Registration-container'>
-              <Registration/>
-            </div>
+            
             <div className='Footer-container'>
               <Footer/>
             </div>

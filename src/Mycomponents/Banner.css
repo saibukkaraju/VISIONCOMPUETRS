@@ -1,18 +1,21 @@
 
-  
- .banner-container {
-    width: 100%;
-    margin-top: 0;
-    padding-top: 0;
+  @media (max-width: 768px) {
+  /* Banner container adjustments for mobile */
+  .banner-container {
     position: relative;
     overflow: hidden;
+    max-width: 60%;
+    margin-top: 20px;
+    padding-top: 0;
   }
-  
+
+  /* Banner image adjustments for mobile */
   .banner-image {
-    width: 20%;
-    height: 20px; /* Adjust height here */
-    object-fit: cover; /* Ensures image fits nicely */
     display: block;
+    width: 100%;         /* Make image take full width */
+    max-width: 200px;    /* Prevents it from being too big */
+    max-height: 50px;        /* Maintain aspect ratio */
+    object-fit: cover; 
+    margin-top: 20px;  /* Ensures image is cropped nicely if needed */
   }
-  
-  
+}

@@ -1,65 +1,68 @@
+/* ===== Desktop / Default Styles ===== */
 .key-facts-section {
-    padding: 50px 20px;
-    background-color: #f9f9f9;
-    text-align: center;
-    height: 500px;
-   
+  padding: 3rem 1.25rem; /* 50px 20px */
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.key-facts-section .title {
+  font-size: 1.5rem; /* 24px */
+  margin: 1.25rem 0 2.5rem 0; /* 20px top, 40px bottom */
+  font-weight: bold;
+}
+
+.facts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem; /* 20px */
+  max-width: 1000px;
+  margin: auto;
+  background-color: #007acc;
+  padding: 1rem;
+}
+
+.fact-box {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 1.25rem 0.9rem;
+  background: #fff3e0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.9rem;
+  transition: transform 0.3s ease;
+}
+
+.fact-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.fact-box .icon {
+  font-size: 2rem; /* 32px */
+  color: #007acc;
+}
+
+/* ===== Mobile Styles ===== */
+@media (max-width: 768px) {
+  .key-facts-section {
+    padding: 1.25rem;
   }
-  
+
   .key-facts-section .title {
-    font-size: 24px;
-    margin-bottom: 40px;
-    font-weight: bold;
-    margin-top: 20px;
+    font-size: 1.375rem; /* 22px */
+    margin-bottom: 1.5rem;
   }
-  
+
   .facts-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-    max-width: 1000px;
-    margin: auto;
-    background-color: #007acc;
-    max-height: 700px;
-    
-  }
-  
-  .fact-box {
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 20px 15px;
-    background: #fff3e0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    transition: transform 0.3s ease;
-  }
-  
-  .fact-box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  }
-  
-  .fact-box .icon {
-    font-size: 32px;
-    color: #007acc;
-  }
-  @media (max-width: 768px) {
-  .keyfacts-container {
-    flex-direction: column;
-    padding: 10px;
+    grid-template-columns: 1fr;
+    background-color: transparent; /* avoid overflow color */
+    padding: 0;
   }
 
   .fact-box {
     width: 100%;
-    margin: 10px 0;
-    font-size: 16px;
-    text-align: center;
-  }
-
-  .keyfacts-title {
-    font-size: 22px;
-    text-align: center;
+    margin: 0.6rem 0;
+    font-size: 1rem;
   }
 }

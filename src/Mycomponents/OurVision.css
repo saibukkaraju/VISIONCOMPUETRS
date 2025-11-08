@@ -1,37 +1,38 @@
+/* ===== Desktop / Default Styles ===== */
 .our-vision-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color:#f68712;
+  background-color: #f68712;
   color: white;
-  padding: 40px;
+  padding: 2.5rem; /* 40px */
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  margin: 50px;
+  margin: 3rem; /* 50px */
   flex-wrap: wrap;
-  margin-top: 20px;
+  margin-top: 1.25rem; /* 20px */
 }
 
 .vision-text {
   flex: 1;
-  padding-right: 20px;
+  padding-right: 1.25rem; /* 20px */
   min-width: 300px;
 }
 
 .vision-text h2 {
-  font-size: 30px;
+  font-size: 1.875rem; /* 30px */
   color: white;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .vision-text p {
-  font-size: 16px;
+  font-size: 1rem; /* 16px */
   line-height: 1.6;
 }
 
 .vision-button {
-  margin-top: 20px;
-  padding: 10px 20px;
+  margin-top: 1.25rem;
+  padding: 0.6rem 1.25rem;
   background-color: #f8b400;
   border: none;
   color: #0b1c3f;
@@ -44,7 +45,6 @@
   flex: 1;
   text-align: center;
   min-width: 200px;
-
 }
 
 .vision-image img {
@@ -52,26 +52,35 @@
   max-width: 350px;
   border-radius: 10px;
 }
+
+/* ===== Mobile Styles ===== */
 @media (max-width: 768px) {
-  .vision-container {
+  .our-vision-box {
     flex-direction: column;
-    padding: 10px;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
   }
 
-  .vision-title {
-    font-size: 22px;
-    text-align: center;
+  .vision-text {
+    padding: 0;
+    font-size: 1rem;
+    text-align: justify;
+    margin-bottom: 1rem;
+  }
+
+  .vision-text h2 {
+    font-size: 1.375rem; /* 22px */
+    margin-bottom: 0.8rem;
   }
 
   .vision-image {
     width: 100%;
-    height: auto;
-    margin: 10px 0;
+    margin-top: 1rem;
   }
 
-  .vision-text {
-    font-size: 16px;
-    text-align: justify;
-    padding: 0 10px;
+  .vision-image img {
+    max-width: 100%;
+    height: auto;
   }
 }

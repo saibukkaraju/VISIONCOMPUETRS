@@ -1,9 +1,11 @@
+/* ===== Desktop / Default Styles ===== */
 .total-container {
   display: flex;
-  width: 1100px;
-  height: 500px;
+  width: 90%; /* 1100px → relative */
+  max-width: 1100px; /* prevent it from getting too big */
+  height: 31rem; /* 500px → rem */
   border: 2px solid #333;
-  margin: 40px auto;
+  margin: 2.5rem auto;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   border-radius: 12px;
   overflow: hidden;
@@ -12,25 +14,26 @@
 .left-panel {
   width: 30%;
   height: 100%;
-  overflow-y: hidden;
   background-color: #fff3e0;
-  padding: 10px;
+  padding: 0.6rem;
   border-right: 1px solid #ccc;
+  overflow-y: auto;
 }
 
 .right-panel {
-  width: 65%;
+  width: 70%;
   height: 100%;
-  padding: 20px;
+  padding: 1.25rem;
   background-color: white;
-  overflow-y: scroll; /* Ensure scroll appears when content exceeds the height */
-  box-sizing: border-box; /* Ensures padding is inside the width/height calculation */
+  overflow-y: auto;
+  box-sizing: border-box;
 }
+
+/* Course box styles */
 .course-box {
-  padding: 15px;
-  margin: 10px 0;
+  padding: 0.9rem;
+  margin: 0.6rem 0 0.6rem 2.5rem;
   border-radius: 10px;
-  margin-left: 40px;
   cursor: pointer;
   text-align: center;
   transition: transform 0.3s ease;
@@ -45,26 +48,63 @@
   width: 50px;
   height: 50px;
   object-fit: contain;
-  margin-top: 10px;
+  margin-top: 0.6rem;
 }
 
 .course-name {
   font-weight: 600;
-  font-size: 14px;
+  font-size: 0.9rem;
 }
 
 .detail-img {
   width: 80px;
   height: 80px;
   object-fit: contain;
-  margin: 10px 0;
+  margin: 0.6rem 0;
 }
 
 ul {
-  padding-left: 20px;
-  font-size: 15px;
+  padding-left: 1.25rem;
+  font-size: 0.95rem;
 }
 
 li {
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
+}
+
+/* ===== Mobile Styles ===== */
+@media (max-width: 768px) {
+  .total-container {
+    flex-direction: column;
+    width: 95%;
+    height: auto; /* let it expand naturally */
+    margin: 1.5rem auto;
+  }
+
+  .left-panel,
+  .right-panel {
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+    padding: 1rem;
+  }
+
+  .course-box {
+    margin-left: 0;
+  }
+
+  .course-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .course-name {
+    font-size: 0.85rem;
+  }
+
+  .detail-img {
+    width: 60px;
+    height: 60px;
+  }
 }

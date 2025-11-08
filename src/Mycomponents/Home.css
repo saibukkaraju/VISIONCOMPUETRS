@@ -1,22 +1,28 @@
 @media (max-width: 768px) {
   .home-container {
+    display: flex;
     flex-direction: column;
-    padding: 10px;
+    align-items: center;
+    padding: 0.6rem; /* 10px */
+    text-align: center;
   }
 
   .home-title {
-    font-size: 22px;
-    text-align: center;
+    font-size: 1.4rem; /* 22px */
+    margin-bottom: 0.8rem;
   }
 
   .home-image {
     width: 100%;
     height: auto;
-    margin: 10px 0;
+    margin: 0.6rem 0;
+    object-fit: cover;
   }
 
   .home-button {
-    font-size: 16px;
-    padding: 8px 12px;
+    font-size: 1rem; /* 16px */
+    padding: 0.5rem 0.75rem; /* 8px 12px */
+    border-radius: 6px;
   }
 }
+

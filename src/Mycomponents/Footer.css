@@ -1,81 +1,84 @@
 
 
-.footer {
-    background-color: #285898;
-    color: white;
-    padding: 40px 20px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    font-family: Arial, sans-serif;
-    margin-top: 0 ;
-    height:40%;
-  }
-  
-  .footer-section {
-    flex: 1;
-    width: 50%;
-    margin: 10px;
-  }
-  
-  .footer-logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .logo-image {
-    width: 100px;       
-    height: auto;
-  }
-  
-  .footer-title {
-    font-size: 24px;
-    font-weight: bold;
-    color: #ff7f27;   /* Orange shade like the site */
-  }
-  
-  
-  
-  .footer-text {
-    font-size: 14px;
-    margin-top: 10px;
-    line-height: 1.6;
-  }
-  .nav-section a {
-    text-decoration: none;
-    font-weight: bold;
-    color: white;
-    transition: color 0.3s;
-    padding-left: 10px;
-  
-     gap: 20px;
-  }
+/* ===== Desktop / Default Styles ===== */
 
-  
-  .nav-section a:hover {
-    color: orangered;
-  }
-  @media (max-width: 768px) {
-  .footer-container {
+
+/* ===== Desktop / Default Styles ===== */
+.footer {
+  background-color: #285898;
+  color: white;
+  padding: 2.5rem 1.25rem; /* 40px 20px → rem */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-family: Arial, sans-serif;
+  margin-top: 0;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px; /* ensures better wrapping */
+  margin: 0.6rem;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.logo-image {
+  width: 100px;
+  height: auto;
+}
+
+.footer-title {
+  font-size: 1.5rem; /* 24px */
+  font-weight: bold;
+  color: #ff7f27; /* Orange shade */
+}
+
+.footer-text {
+  font-size: 0.875rem; /* 14px */
+  margin-top: 0.6rem;
+  line-height: 1.6;
+}
+
+.nav-section a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  transition: color 0.3s;
+  padding-left: 0.6rem;
+}
+
+.nav-section a:hover {
+  color: orangered;
+}
+
+/* ===== Mobile Styles ===== */
+@media (max-width: 768px) {
+  .footer {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 15px;
+    padding: 1rem;
   }
 
   .footer-section {
-    margin: 10px 0;
     width: 100%;
+    margin: 0.8rem 0;
   }
 
   .footer-title {
-    font-size: 20px;
+    font-size: 1.25rem; /* 20px */
   }
 
-  .footer-links a {
+  .nav-section a {
     display: block;
-    margin: 5px 0;
-    font-size: 16px;
+    margin: 0.3rem 0;
+    font-size: 1rem; /* 16px */
+    padding-left: 0; /* remove desktop padding */
   }
 }
+

@@ -1,4 +1,3 @@
-import React from 'react';
 import './TrainingServices.css';
 import CourseModules from './CourseModules';
 //import CourseScroller from './CourseScroller';
@@ -16,7 +15,7 @@ import css2 from './images/css2.jpeg';
 import js1 from './images/js1.png';
 import interviewskills from './images/interviewskills.jpeg';
 import msoffice from './images/ms office.jpeg';
-import blurr from './images/blurr.jpeg';
+//import blurr from './images/blurr.jpeg';
 //import CourseViewer from './CourseViewer';
 //import CourseScroller from './CourseScroller';
 //import KeyFacts from './KeyFacts';
@@ -46,7 +45,7 @@ const TrainingServices = () => {
     <div className="about-container">
 
     {/* Heading Bar */}
-    <div className="about-heading" style={{ backgroundImage: `url(${blurr})` }}>
+    <div className="about-heading" >
       <div className="overlay">
         <h1>COURSES</h1>
         

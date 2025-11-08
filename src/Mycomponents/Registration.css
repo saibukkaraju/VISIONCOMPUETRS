@@ -1,38 +1,56 @@
+/* ===== Desktop / Default Styles ===== */
 .container {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.25rem; /* 20px */
+  gap: 1rem;
+}
+
+.box {
+  width: 45%;
+  padding: 1.25rem;
+  border: 2px solid #ffa500;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.form-box input {
+  display: block;
+  width: 100%;
+  padding: 0.5rem; /* 8px */
+  margin-bottom: 0.75rem; /* 12px */
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.form-box button {
+  padding: 0.6rem 1.25rem; /* 10px 20px */
+  background-color: #ffa500;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.display-box p {
+  font-size: 1rem; /* 16px */
+  margin: 0.5rem 0; /* 8px */
+}
+
+/* ===== Mobile Styles ===== */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
   }
-  
+
   .box {
-    width: 45%;
-    padding: 20px;
-    border: 2px solid #ffa500;
-    border-radius: 10px;
-    background-color: #f9f9f9;
-  }
-  
-  .form-box input {
-    display: block;
     width: 100%;
-    padding: 8px;
-    margin-bottom: 12px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+    margin-bottom: 1rem;
   }
-  
+
   .form-box button {
-    padding: 10px 20px;
-    background-color: #ffa500;
-    border: none;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 5px;
+    width: 100%; /* button stretches across for easy tapping */
   }
-  
-  .display-box p {
-    font-size: 16px;
-    margin: 8px 0;
-  }
-  
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 import './AboutUs.css';
-import blurr from './images/blurr.jpeg'; // Replace with your blurred imagei // Replace with your content image
+//import blurr from './images/blurr.jpeg'; // Replace with your blurred imagei // Replace with your content image
 import vision7 from './images/vision7.jpeg';
 import './Testimonials.js'
 import Testimonials from './Testimonials.js';
@@ -13,7 +13,7 @@ const AboutUs = () => {
     <div className="about-container">
 
       {/* Heading Bar */}
-      <div className="about-heading" style={{ backgroundImage: `url(${blurr})` }}>
+      <div className="about-heading" >
         <div className="overlay">
           <h1>About Us</h1>
           

@@ -1,3 +1,4 @@
+/* ===== Desktop / Default Styles ===== */
 .services-container {
   text-align: center;
   padding: 10px;
@@ -5,9 +6,10 @@
   margin-top: 10px;
 }
 
-h1 {
+.services-container h1 {
   font-size: 24px;
   margin-bottom: 20px;
+  color: white;
 }
 
 /* Static Info Box */
@@ -58,15 +60,36 @@ h1 {
   color: white;
 }
 
-/* Responsive Design */
+/* ===== Mobile Styles ===== */
 @media (max-width: 768px) {
   .services-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .service-item {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .service-info-box {
+    padding: 15px;
   }
 }
 
 @media (max-width: 480px) {
   .services-grid {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .service-item {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .service-info-box {
+    font-size: 14px;
+    padding: 12px;
   }
 }
