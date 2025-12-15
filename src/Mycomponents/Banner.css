@@ -1,21 +1,22 @@
 
-  @media (max-width: 768px) {
-  /* Banner container adjustments for mobile */
+ /* ===== Mobile Screen (Up to 768px) ===== */
+@media (max-width: 768px) {
+
+  /* Banner container responsive */
   .banner-container {
-    position: relative;
-    overflow: hidden;
-    max-width: 60%;
-    margin-top: 20px;
-    padding-top: 0;
+    width: 100%;          /* full width on mobile */
+    margin-top: 10px;
+    padding: 0;
+    text-align: center;   /* center the image */
   }
 
-  /* Banner image adjustments for mobile */
+  /* Banner image responsive */
   .banner-image {
+    width: 100%;          /* full width */
+    max-width: 300px;     /* limit size so it doesn’t become too large */
+    height: auto;         /* maintain correct aspect ratio */
+    object-fit: contain;  /* show full image without cutting */
+    margin: 0 auto;
     display: block;
-    width: 100%;         /* Make image take full width */
-    max-width: 200px;    /* Prevents it from being too big */
-    max-height: 50px;        /* Maintain aspect ratio */
-    object-fit: cover; 
-    margin-top: 20px;  /* Ensures image is cropped nicely if needed */
   }
 }
