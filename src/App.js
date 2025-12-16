@@ -12,6 +12,7 @@ function App() {
     <Router>
       <MenuBar />
       <Routes>
+        
         <Route path="/" element={<Home />} />
         <Route path="/courses" element={<TrainingServices />} />
         <Route path="/aboutus" element={<AboutUs />} />

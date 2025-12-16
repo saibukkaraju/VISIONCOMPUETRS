@@ -2,7 +2,9 @@
   "name": "first-app",
   "version": "0.1.0",
   "private": true,
- "homepage": "https://saibukkaraju.github.io/VISIONCOMPUTERS",
+ 
+ "homepage": "https://saivamshitha.github.io/vision-computers",
+
 
 
   "dependencies": {
